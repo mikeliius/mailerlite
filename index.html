@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MailerLite design proposal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href=" https://www.mailerlite.com/build/assets/site-92a927a3.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'green12': '#CEF3E1',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="relative font-inter">
+
+
+    <div class="mx-auto max-w-screen-2xl px-12 pb-12">
+
+        <!-- Section from current mailerlite.com START-->
+        <div class="flex flex-col items-start pt-24">
+            <h1 class="font-bold tracking-tight leading-tight block" style="font-size: 4rem;">
+                <div class="flex flex-col sm:flex-row sm:space-x-2 xl:space-x-4">
+                    <span>Create</span>
+                    <div class="inline-flex flex-col items-start overflow-hidden text-center h-[45px] md:h-[60px] xl:h-[80px]">
+
+                        <div class="slide-up bg-green-100 rounded-lg px-0.5 md:px-4">email marketing</div>
+
+                        <div class="slide-up bg-green-100 rounded-lg px-0.5 md:px-4">automations</div>
+
+                        <div class="slide-up bg-green-100 rounded-lg px-0.5 md:px-4">landing pages</div>
+
+                        <div class="slide-up bg-green-100 rounded-lg px-0.5 md:px-4">signup forms</div>
+
+                        <div class="slide-up bg-green-100 rounded-lg px-0.5 md:px-4">websites</div>
+
+                    </div>
+                </div>
+                <span>your audience will love</span>
+            </h1>
+            <div class="flex flex-col items-start">
+
+                <div class="text-xl mt-4 mb-8 leading-relaxed text">
+                    <p>Digital marketing tools to grow your audience faster and drive revenue smarter. Backed by 24/7 award-winning support.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/signup" class="type-primary size-large">Sign up free</a>
+
+                    <a href="/demo" class="type-black-outline size-large text-sm opacity-50">Watch demo</a>
+
+                </div>
+                <span class="text-sm mt-3 opacity-50 tracking-wide">Get a free <span class="premium-days">30-day</span>
+                    trial of premium features | No credit card required</span>
+            </div>
+        </div>
+        <!-- Section from current mailerlite.com END-->
+
+
+
+
+        <!-- New section (proposal) START-->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-14 gap-8 py-8 xl:gap-14 xl:py-14">
+
+            <div class="block rounded-xl border border-gray-200 bg-slate-50 flex flex-col justify-between hover:bg-green12">
+                <a href="/features/email-marketing" class="block group p-6">
+                    <span class="h5 text-lg font-semibold mb-1 flex items-center space-x-1.5">
+                        <span class="group-hover:bg-white py-1 px-1.5 -ml-1.5 leading-none rounded">Email campaigns</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:translate-x-1 transition duration-100 ease-in-out" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+
+                    <p class="leading-snug opacity-70">Create engaging, dynamic emails in minutes with our intuitive
+                        drag & drop email editor.
+                    </p>
+                </a>
+                <a href="/features/email-marketing" class="block">
+                    <div class="flex flex-col items-start w-full ">
+                        <div class="overflow-hidden rounded-b-xl">
+                            <img class="w-full" src="img/email-02.png" alt="email-marketing">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="block rounded-xl border border-gray-200 bg-slate-50 flex flex-col justify-between hover:bg-green12">
+                <a href="/features/automation" class="block group p-6">
+                    <span class="h5 text-lg font-semibold mb-1 flex items-center space-x-1.5">
+                        <span class="group-hover:bg-white py-1 px-1.5 -ml-1.5 leading-none rounded">Automations</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 group-hover:translate-x-1 transition duration-100 ease-in-out" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+                    <p class="leading-snug opacity-70 pb-4">Send perfectly-timed and targeted emails automatically.
+                    </p>
+                </a>
+                <a href="/features/automation" class="block">
+                    <div class="flex flex-col items-start w-full ">
+                        <div class="overflow-hidden rounded-b-xl">
+                            <img class="w-full" src="img/automations-01.png" alt="automation">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="block rounded-xl border border-gray-200 bg-slate-50 flex flex-col justify-between hover:bg-green12">
+                <a href="/features/performance-reports" class="block group p-6">
+                    <span class="h5 text-lg font-semibold mb-1 flex items-center space-x-1.5">
+                        <span class="group-hover:bg-white py-1 px-1.5 -ml-1.5 leading-none rounded">Track your results</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 group-hover:translate-x-1 transition duration-100 ease-in-out" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+
+                    <p class="leading-snug opacity-70">Monitor performance to find what works best for your
+                        business.</p>
+                </a>
+                <a href="/features/performance-reports" class="block">
+                    <div class="flex flex-col items-start w-full ">
+                        <div class="overflow-hidden rounded-b-xl">
+                            <img class="w-full" src="img/tracking-02.png" alt="performance-reports">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="block rounded-xl border border-gray-200 bg-slate-50 flex flex-col justify-between hover:bg-green12">
+                <a href="/features/sell-digital-products" class="block group p-6">
+                    <span class="h5 text-lg font-semibold mb-1 flex items-center space-x-1.5">
+                        <span class="group-hover:bg-white py-1 px-1.5 -ml-1.5 leading-none rounded">Sell digital products</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 group-hover:translate-x-1 transition duration-100 ease-in-out" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+                    <p class="leading-snug opacity-70 pb-4">Sell ebooks, downloads, or whatever else will help subscribers.
+                    </p>
+                </a>
+                <a href="/features/sell-digital-products" class="block">
+                    <div class="flex flex-col items-start w-full ">
+                        <div class="overflow-hidden rounded-b-xl">
+                            <img class="w-full" src="img/digital-products-01.png" alt="sell-digital-products">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-14">
+            <div class="block rounded-xl border border-gray-200 bg-slate-50 flex flex-row justify-between overflow-hidden lg:h-44 max-h-48 hover:bg-green12">
+                <a href="/features/website-builder" class="block group p-6">
+                    <span class="h5 text-lg font-semibold mb-1 flex items-center space-x-1.5">
+                        <span class="group-hover:bg-white py-1 px-1.5 -ml-1.5 leading-none rounded">Websites</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 group-hover:translate-x-1 transition duration-100 ease-in-out" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+                    <p class="leading-snug opacity-70 pb-4">Build stunning websites on your own and let your business shine.
+                    </p>
+                </a>
+                <a href="/features/website-builder" class="block">
+                    <div class="hidden xl:block cursor-pointer w-full lg:h-auto">
+                        <div class="overflow-hidden rounded-b-xl">
+                            <img class="w-full" src="img/website-03.png" alt="website-builder">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="block rounded-xl border border-gray-200 bg-slate-50 flex flex-row justify-between overflow-hidden lg:h-44 max-h-48 hover:bg-green12">
+                <a href="/features/signup-forms" class="block group p-6">
+                    <span class="h5 text-lg font-semibold mb-1 flex items-center space-x-1.5">
+                        <span class="group-hover:bg-white py-1 px-1.5 -ml-1.5 leading-none rounded">Signup forms</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 group-hover:translate-x-1 transition duration-100 ease-in-out" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+                    <p class="leading-snug opacity-70 pb-4">Grow your audience with highly-effective subscribe
+                        forms.</p>
+                </a>
+                <a href="/features/signup-forms" class="block">
+                    <div class="hidden xl:block cursor-pointer w-full lg:h-auto">
+                        <div class="overflow-hidden rounded-b-xl">
+                            <img class="w-full" src="img/subscribers-02.png" alt="signup-forms">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="block rounded-xl border border-gray-200 bg-slate-50 flex-row justify-between overflow-hidden lg:h-44 max-h-48 hover:bg-green12 hidden lg:flex">
+                <a href="/features/paid-newsletter-subscriptions" class="block group p-6">
+                    <span class="h5 text-lg font-semibold mb-1 flex items-center space-x-1.5">
+                        <span class="group-hover:bg-white py-1 px-1.5 -ml-1.5 leading-none rounded">Paid newsletter
+                            subscriptions</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 group-hover:translate-x-1 transition duration-100 ease-in-out" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </span>
+                    <p class="leading-snug opacity-70 pb-4">Easily set up recurring payments to offer paid
+                        subscriptions.
+                    </p>
+                </a>
+                <a href="/features/paid-newsletter-subscriptions" class="block">
+                    <div class="hidden xl:block cursor-pointer w-full lg:h-auto">
+                        <div class="overflow-hidden rounded-b-xl">
+                            <img class="w-full" src="img/newsletter-01.png" alt="paid-newsletter-subscriptions">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- New section (proposal) END-->
+    </div>
+
+</body>
+
+</html>
